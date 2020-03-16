@@ -86,7 +86,7 @@ for (let i =0; i < 8; i ++) {
 }
 .games {
   background-color: #ffffff;
-  min-height: 1000px;
+  min-height: 800px;
   float: left;
   width: 76%;
   border: rgb(228, 227, 227) 0.5px solid;
@@ -134,15 +134,12 @@ for (let i =0; i < 8; i ++) {
 }
 
 .game-source {
-  /* position: absolute;
-  top: 400px;
-  left: -500px; */
   width: 100%;
   height: 450px;
 }
 .ad {
   background-color: #ffffff;
-  min-height: 1000px;
+  min-height: 800px;
   width: 23%;
   float: right;
   border: rgb(228, 227, 227) 0.5px solid;
