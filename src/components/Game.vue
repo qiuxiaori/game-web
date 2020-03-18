@@ -2,6 +2,7 @@
   <div class="body">
     <div class="container">
       <div class='games'>
+        <a-modal title="Basic Modal" v-model="gameVisible" @ok="gameOk">
         <Layout>
           <div class="games-title">动物森友会</div>
           <a-divider />
@@ -43,10 +44,9 @@
           </div>
       </Layout>
         
+    </a-modal>
         
       </div>
-      
-      <div class='ad'></div>
     </div>
   </div>
 </template>
@@ -63,13 +63,17 @@ for (let i =0; i < 8; i ++) {
     data() {
       return {
         current: ['mail'],
-        data
+        data,
+        gameVisible: false
       };
     },
      methods: {
       callback(key) {
         console.log(key);
       },
+      gameOk() {
+        this.gameVisible = false
+      }
     },
   };
 </script>

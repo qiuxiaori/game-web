@@ -3,7 +3,7 @@
     <Layout>
       <Header>header</Header>
       <Layout class="body-container">
-        <Game></Game>
+        <Body></Body>
       </Layout>
       <Footer>footer</Footer>
     </Layout>
@@ -13,14 +13,14 @@
 
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Game from './components/Game.vue'
+import Body from './components/Body.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
-    Game
+    Body
   }
 }
 </script>
