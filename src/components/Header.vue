@@ -1,14 +1,15 @@
 <template>
   <div>
     <a-menu v-model="current" mode="horizontal" class="header">
-      <a-menu-item key="home" class="home"> 主页 </a-menu-item>
-      <a-menu-item key="ns"> <a-icon type="wallet" /> NS游戏 </a-menu-item>
-      <a-menu-item key="pc"> <a-icon type="laptop" /> PC游戏 </a-menu-item>
-      <a-menu-item key="ps"> <a-icon type="database" /> PS游戏 </a-menu-item>
-      <a-menu-item key="addGame"> <a-icon type="appstore" /> 添加游戏 </a-menu-item>
+      <a-menu-item key="ns"> NS游戏 </a-menu-item>
+      <a-menu-item key="pc"> PC游戏 </a-menu-item>
+      <a-menu-item key="ps"> PS游戏 </a-menu-item>
+      <a-menu-item key="addGame"> 后台管理 </a-menu-item>
+      <a-menu-item key="home" class="home"> SXNGAMER </a-menu-item>
       <a-menu-item key="user" class='user' v-show="user" v-model="userName">{{userName}}</a-menu-item>
       <a-menu-item key="logout " class='logout' @click="logout" v-show="user">退出</a-menu-item>
       <a-menu-item key="login" class='login' v-show="!user">
+        <a-button shape="round" :size="size">登录</a-button>
           <a-popover trigger="click" v-model="loginVisible">
             <template slot="content" style="width:80px">
               <a-input placeholder="请输入用户名" allowClear v-model="userName" style="margin:15px 0px;">
@@ -21,10 +22,9 @@
               <a-button  size="small" style="margin-left: 25%;">重置</a-button>
               <a-button  size="small" style="margin-left: 25%;" @click="login">确定</a-button>
             </template>
-            登录
           </a-popover>
       </a-menu-item>
-      <a-menu-item key="register" class='register' v-show="!user" @click="showDrawer"> 注册 
+      <!-- <a-menu-item key="register" class='register' v-show="!user" @click="showDrawer"> 注册 
         <a-drawer
           title="注册账号"
           :width="680"
@@ -126,7 +126,7 @@
             <a-button @click="register" type="primary">确认</a-button>
           </div>
         </a-drawer>
-      </a-menu-item>
+      </a-menu-item> -->
     </a-menu>
   </div>
 </template>
@@ -180,22 +180,27 @@
 
 <style>
 .header {
-  padding: 0 15%;
-  background-color:  #064c50;
-  color: #ffffff;
-  box-shadow: 1px 2px 5px #00777e;
+  background-color:  #ffffff;
+  color: #363940;
+  font-size: 15px;
+  font-weight: 600;
+  height: 60px;
+  padding-left: -1%;
 }
 .home {
+  margin-left: 21%;
+  font-weight: 900;
   margin-right: 4%;
-  font-size: 26px;
+  color: #ff6700;
+  font-size: 24px;
 }
 .ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
   color: #15d1dbf5;
 }
 .user {
-  margin-left: 37%;
+  margin-left: 30%;
 }
 .login {
-  margin-left: 37%;
+  margin-left: 30%;
 }
 </style>
