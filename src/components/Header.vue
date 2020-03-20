@@ -2,10 +2,10 @@
   <div>
     <a-menu v-model="current" mode="horizontal" class="header">
       <a-menu-item key="ns"> NS游戏 </a-menu-item>
-      <a-menu-item key="pc"><router-link to='/'> PC游戏</router-link> </a-menu-item>
-      <a-menu-item key="ps"><router-link to='/about'> PS游戏</router-link> </a-menu-item>
+      <a-menu-item key="pc"> PC游戏 </a-menu-item>
+      <a-menu-item key="ps"><router-link to='/about'> PS游戏 </router-link> </a-menu-item>
       <a-menu-item key="addGame"> 后台管理 </a-menu-item>
-      <a-menu-item key="home" class="home"> SXNGAMER </a-menu-item>
+      <a-menu-item key="home" class="home"><router-link to='/'> SXNGAMER </router-link></a-menu-item>
       <a-menu-item key="user" class='user' v-show="user" v-model="userName">{{userName}}</a-menu-item>
       <a-menu-item key="logout " class='logout' @click="logout" v-show="user">退出</a-menu-item>
       <a-menu-item key="login" class='login' v-show="!user">

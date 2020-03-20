@@ -18,10 +18,11 @@
 </script>
 <style scoped>
 .ad {
-    text-align: center;
-    height: 430px;
-    line-height: 430px;
-    border-radius: 12px;
-    overflow: hidden;
+  width: 32%;
+  text-align: center;
+  height: 430px;
+  line-height: 430px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 </style>

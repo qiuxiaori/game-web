@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.child {
+  display: block;
+  flex: 0 0 150px;
+  border: 1px solid black;
+}
+.child:nth-child(3) {
+  margin-left: auto;
+}
