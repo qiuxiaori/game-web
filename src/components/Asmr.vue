@@ -1,10 +1,10 @@
 <template>
-  <a-card hoverable style="width: 210px;" :bordered="false">
+  <a-card hoverable style="width: 15%;height:160px;" :bordered="false">
     <img
       alt="example"
-      src="https://image.gcores.com/da11b282-25e7-4602-aa03-6af09725175f.jpg?x-oss-process=image/resize,limit_1,m_lfit,w_800/quality,q_90"
+      src="https://image.gcores.com/3a0bbdfd-f6c5-4073-82a5-73ffa500c417.jpg?x-oss-process=image/resize,limit_1,m_lfit,w_720/quality,q_90"
       slot="cover"
-      style="height: 90px;border-radius:5px;"
+      style="height: 70px;border-radius:4px;"
     />
     <!-- <template class="ant-card-actions" slot="actions">
       <a-icon type="setting" key="setting" />

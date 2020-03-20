@@ -3,7 +3,7 @@
     <a-menu v-model="current" mode="horizontal" class="header">
       <a-menu-item key="ns"> NS游戏 </a-menu-item>
       <a-menu-item key="pc"> PC游戏 </a-menu-item>
-      <a-menu-item key="ps"> PS游戏 </a-menu-item>
+      <a-menu-item key="ps"> <router-link to='/foo'>PS游戏</router-link> </a-menu-item>
       <a-menu-item key="addGame"> 后台管理 </a-menu-item>
       <a-menu-item key="home" class="home"> SXNGAMER </a-menu-item>
       <a-menu-item key="user" class='user' v-show="user" v-model="userName">{{userName}}</a-menu-item>
@@ -182,7 +182,7 @@
 .header {
   background-color:  #ffffff;
   color: #363940;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   height: 60px;
   padding-left: -1%;

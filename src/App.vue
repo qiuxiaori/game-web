@@ -11,23 +11,29 @@
           <Ad1 class='adMain'></Ad1>
         </div>
         <div class='articleLayout'>
-          <Article class='articleMain'></Article>
-          <Article class='articleMain'></Article>
-          <Article class='articleMain'></Article>
+          <div class='articleContainer'>
+            <Article class='articleMain'></Article>
+            <Article class='articleMain'></Article>
+            <Article class='articleMain'></Article>
+          </div>
         </div>
         
         <a href=""  class='asmr'>ASMR   <a-icon type="right" /></a>
         <div class='asmrLayout'>
-          <Asmr class='asmrMain'></Asmr>
-          <Asmr class='asmrMain'></Asmr>
-          <Asmr class='asmrMain'></Asmr>
-          <Asmr class='asmrMain'></Asmr>
-          <Asmr class='asmrMain'></Asmr>
+          <div class='asmrContainer'>
+            <Asmr class='asmrMain'></Asmr>
+            <Asmr class='asmrMain'></Asmr>
+            <Asmr class='asmrMain'></Asmr>
+            <Asmr class='asmrMain'></Asmr>
+            <Asmr class='asmrMain'></Asmr>
+          </div>
         </div>
       </layout>
       <!-- <Layout class="body-container">
       </Layout> -->
-      <Footer>footer</Footer>
+      <layout class='footerLayout'>
+        <Footer class='footerMain'>footer</Footer>
+      </layout>
   </div>
 </template>
 <script>
@@ -113,15 +119,18 @@ export default {
   position: absolute;
   background-color: #f7f7f8;
 }
+.articleContainer {
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+  padding: 1px;
+}
 .articleMain {
-  margin: 5px 9px 40px 9px;
-  width: 33%;
+  margin: 5px 1% 40px 1%;
   float: left;
 }
 .asmrLayout {
-  top: 925px;
-  margin: auto 0;
-  text-align: center;
+  top: 945px;
   padding: 0 18%;
   width: 100%;
   position: absolute;
@@ -129,18 +138,37 @@ export default {
 }
 
 .asmr {
-  padding: 5px 19%;
+  padding: 5px 21%;
   top: 890px;
-  height: 20px;
+  height: 40px;
   font-weight: 600;
   font-size: 18px;
   color: black;
   width: 100%;
+  line-height: 40px;
   position: absolute;
 }
+
+.asmrContainer {
+  margin: auto 0;
+  text-align: center;
+  width: 100%;
+  padding: 0 1%;
+}
 .asmrMain {
-  margin: 5px 16px 40px 17px;
-  width: 19%;
+  margin: 5px 2.5% 40px 2.5%;
   float: left;
+}
+
+.footerLayout {
+  position: absolute;
+  top: 1500px;
+  width: 100%;
+  background-color: #f7f7f8;
+  height: 455px;
+  padding: 3% 18%;
+}
+.footerMain {
+  padding: 1px 2px;
 }
 </style>
